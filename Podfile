@@ -17,5 +17,5 @@ target 'gpsAppUp' do
   end
 
   pod 'RealmSwift'
-  
+  pod 'Charts'
 end

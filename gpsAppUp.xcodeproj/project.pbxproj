@@ -10,6 +10,7 @@
 		0E7624DA2E7CDE9165AC5388 /* Pods_gpsAppUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65515CAC143DCE419EC636B /* Pods_gpsAppUp.framework */; };
 		11EDADDF829E598A77B556FD /* Pods_gpsAppUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF392C1C72D72DE1DC7441D /* Pods_gpsAppUpTests.framework */; };
 		1A5388B6AC75DBA2438ACB31 /* Pods_gpsAppUp_gpsAppUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80435470CA65AF696B9AF685 /* Pods_gpsAppUp_gpsAppUpUITests.framework */; };
+		4726B42D278FF98B00ECC901 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4726B42C278FF98B00ECC901 /* SearchController.swift */; };
 		4728B2A42786C10D006EB7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728B2A32786C10D006EB7E8 /* AppDelegate.swift */; };
 		4728B2A62786C10D006EB7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728B2A52786C10D006EB7E8 /* SceneDelegate.swift */; };
 		4728B2A82786C10D006EB7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728B2A72786C10D006EB7E8 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4726B42C278FF98B00ECC901 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		4728B2A02786C10C006EB7E8 /* gpsAppUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpsAppUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4728B2A32786C10D006EB7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4728B2A52786C10D006EB7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				4728B2A52786C10D006EB7E8 /* SceneDelegate.swift */,
 				4728B2A72786C10D006EB7E8 /* ViewController.swift */,
 				4728B2A92786C10D006EB7E8 /* Main.storyboard */,
+				4726B42C278FF98B00ECC901 /* SearchController.swift */,
 				4728B2AC2786C12D006EB7E8 /* Assets.xcassets */,
 				4728B2AE2786C12D006EB7E8 /* LaunchScreen.storyboard */,
 				4728B2B12786C12D006EB7E8 /* Info.plist */,
@@ -417,6 +420,7 @@
 				4728B2A82786C10D006EB7E8 /* ViewController.swift in Sources */,
 				4728B2A42786C10D006EB7E8 /* AppDelegate.swift in Sources */,
 				4728B2A62786C10D006EB7E8 /* SceneDelegate.swift in Sources */,
+				4726B42D278FF98B00ECC901 /* SearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationUsageDescription</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Taking your position to calculate your speed , and record your position </string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Taking your position to calculate your speed , and record your position </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Taking your position to calculate your speed , and record your position </string>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

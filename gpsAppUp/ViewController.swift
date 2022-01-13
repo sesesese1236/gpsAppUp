@@ -36,7 +36,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     public var startDate:Date? = nil
     public var stopDate:Date? = nil
     let userCalendar = Calendar.current
-    
+    var groupDate:Date? = nil
+    public var searchDate:Date? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         if(startDate != nil && stopDate != nil){
             annotation()
+        }else if(searchDate != nil){
+            annotation()
         }
         let testcords:[CLLocationCoordinate2D] = [
             CLLocationCoordinate2D(latitude: 35.6804, longitude: 139.7690),
@@ -78,6 +81,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         if checkAuthorization(){
             locationManager.startUpdatingLocation()
         }
+        groupDate = Date()
         mapUpdate()
         switchOnOff()
     }
@@ -100,6 +104,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
         mapView.userTrackingMode = MKUserTrackingMode.none
         switchOnOff()
+        groupDate = nil
     }
     
     
@@ -138,6 +143,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         db.time = currentDateTime
         db.latitude = latitude!
         db.longitude = longitude!
+        db.altitude = altitude!
+        
         
         try! realm.write {
             realm.add(db)
@@ -166,7 +173,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let realm = try! Realm()
         print(startDate!)
         print(stopDate!)
-        let gpsList:Results<YourExistence> = realm.objects(YourExistence.self).filter("time <= %@ AND time >= %@", stopDate! ,startDate!)
+        var gpsList:Results<YourExistence>
+        if(searchDate != nil){
+            gpsList = realm.objects(YourExistence.self).filter("group = %@", searchDate!)
+        }else{
+            gpsList = realm.objects(YourExistence.self).filter("time <= %@ AND time >= %@", stopDate! ,startDate!)
+        }
         
         let dateformatter = DateFormatter()
         var cords:[CLLocationCoordinate2D] = []

@@ -139,12 +139,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let altitude = location?.altitude
         let currentDateTime = Date()
         print("lantidude\(latitude!). longitude\(longitude!)")
-        
+        let dateformatter = DateFormatter()
+        dateformatter.calendar = Calendar(identifier: .gregorian)
+        dateformatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
         db.time = currentDateTime
         db.latitude = latitude!
         db.longitude = longitude!
         db.altitude = altitude!
-        
+        db.group = dateformatter.string(from:groupDate!)
         
         try! realm.write {
             realm.add(db)

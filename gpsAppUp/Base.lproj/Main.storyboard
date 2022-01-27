@@ -126,14 +126,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ude-b6-8Pn">
-                                <rect key="frame" x="0.0" y="165" width="414" height="272.5"/>
+                                <rect key="frame" x="0.0" y="221.5" width="414" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position Data Taken Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbH-gc-P12">
-                                <rect key="frame" x="112" y="144" width="190" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="190" id="Uqw-L2-lHm"/>
-                                    <constraint firstAttribute="height" constant="21" id="vjL-wC-Hna"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Position Data Taken Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbH-gc-P12">
+                                <rect key="frame" x="112" y="200.5" width="190" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -145,7 +141,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgS-K9-55p" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="466" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="466" width="414" height="266"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -155,16 +151,13 @@
                             <constraint firstItem="rgS-K9-55p" firstAttribute="centerX" secondItem="rgp-Hr-e52" secondAttribute="centerX" id="1L8-oc-oyL"/>
                             <constraint firstItem="rgS-K9-55p" firstAttribute="top" secondItem="rgp-Hr-e52" secondAttribute="bottom" constant="7.5" id="K4O-Ea-adM"/>
                             <constraint firstItem="rgp-Hr-e52" firstAttribute="centerY" secondItem="BCx-MO-qBb" secondAttribute="centerY" id="KfK-ep-t3C"/>
-                            <constraint firstItem="ude-b6-8Pn" firstAttribute="top" secondItem="sbH-gc-P12" secondAttribute="bottom" id="PX3-20-Mz2"/>
                             <constraint firstItem="ude-b6-8Pn" firstAttribute="leading" secondItem="zaO-Vj-NMw" secondAttribute="leading" id="RiC-hG-grg"/>
                             <constraint firstItem="rgS-K9-55p" firstAttribute="leading" secondItem="ude-b6-8Pn" secondAttribute="leading" id="W07-W1-bPm"/>
                             <constraint firstItem="ude-b6-8Pn" firstAttribute="trailing" secondItem="zaO-Vj-NMw" secondAttribute="trailing" id="gjk-ye-t54"/>
-                            <constraint firstItem="zaO-Vj-NMw" firstAttribute="bottom" secondItem="rgS-K9-55p" secondAttribute="bottom" constant="268" id="j9B-dI-2Jp"/>
-                            <constraint firstItem="zaO-Vj-NMw" firstAttribute="trailing" secondItem="sbH-gc-P12" secondAttribute="trailing" constant="112" id="m1i-qj-rpa"/>
+                            <constraint firstItem="zaO-Vj-NMw" firstAttribute="bottom" secondItem="rgS-K9-55p" secondAttribute="bottom" constant="130" id="j9B-dI-2Jp"/>
                             <constraint firstItem="rgS-K9-55p" firstAttribute="trailing" secondItem="ude-b6-8Pn" secondAttribute="trailing" id="ohg-Rp-ys5"/>
-                            <constraint firstItem="sbH-gc-P12" firstAttribute="leading" secondItem="zaO-Vj-NMw" secondAttribute="leading" constant="112" id="sED-qd-1cn"/>
+                            <constraint firstItem="ude-b6-8Pn" firstAttribute="top" secondItem="sbH-gc-P12" secondAttribute="bottom" id="tgb-Sf-ZVg"/>
                             <constraint firstItem="rgp-Hr-e52" firstAttribute="top" secondItem="ude-b6-8Pn" secondAttribute="bottom" id="yHe-gY-Jb8"/>
-                            <constraint firstItem="sbH-gc-P12" firstAttribute="top" secondItem="zaO-Vj-NMw" secondAttribute="top" constant="100" id="yOU-ku-jGQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xi3-TR-5Or"/>
@@ -175,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EeL-pi-IXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="753"/>
+            <point key="canvasLocation" x="785.50724637681162" y="752.67857142857144"/>
         </scene>
     </scenes>
     <resources>

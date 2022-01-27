@@ -22,6 +22,7 @@
 		4728B2C72786C12D006EB7E8 /* gpsAppUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728B2C62786C12D006EB7E8 /* gpsAppUpUITestsLaunchTests.swift */; };
 		4728B2D42786C46D006EB7E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4728B2D32786C46D006EB7E8 /* CoreLocation.framework */; };
 		4728B2D62786C87E006EB7E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4728B2D52786C87E006EB7E8 /* MapKit.framework */; };
+		47CB419C279920CA00091425 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CB419B279920CA00091425 /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		4728B2C62786C12D006EB7E8 /* gpsAppUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpsAppUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4728B2D32786C46D006EB7E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4728B2D52786C87E006EB7E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		47CB419B279920CA00091425 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2DD5FB1DA7D736CDD461E1 /* Pods-gpsAppUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpsAppUpTests.release.xcconfig"; path = "Target Support Files/Pods-gpsAppUpTests/Pods-gpsAppUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C3FE015004001E5721DBD34 /* Pods-gpsAppUp-gpsAppUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpsAppUp-gpsAppUpUITests.release.xcconfig"; path = "Target Support Files/Pods-gpsAppUp-gpsAppUpUITests/Pods-gpsAppUp-gpsAppUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		80435470CA65AF696B9AF685 /* Pods_gpsAppUp_gpsAppUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gpsAppUp_gpsAppUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CB419C279920CA00091425 /* Charts.framework in Frameworks */,
 				4728B2D62786C87E006EB7E8 /* MapKit.framework in Frameworks */,
 				4728B2D42786C46D006EB7E8 /* CoreLocation.framework in Frameworks */,
 				0E7624DA2E7CDE9165AC5388 /* Pods_gpsAppUp.framework in Frameworks */,
@@ -156,6 +159,7 @@
 		6C2724BA492AB23023C1C55C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47CB419B279920CA00091425 /* Charts.framework */,
 				4728B2D52786C87E006EB7E8 /* MapKit.framework */,
 				4728B2D32786C46D006EB7E8 /* CoreLocation.framework */,
 				E65515CAC143DCE419EC636B /* Pods_gpsAppUp.framework */,

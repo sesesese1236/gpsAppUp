@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upr-ja-6KA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upr-ja-6KA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -144,11 +144,21 @@
                                 <rect key="frame" x="0.0" y="466" width="414" height="266"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezh-TU-fwI">
+                                <rect key="frame" x="20" y="64" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <segue destination="Upr-ja-6KA" kind="show" id="WBO-ac-rOH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zaO-Vj-NMw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ezh-TU-fwI" firstAttribute="leading" secondItem="zaO-Vj-NMw" secondAttribute="leading" constant="20" id="0n3-Bf-ged"/>
                             <constraint firstItem="rgS-K9-55p" firstAttribute="centerX" secondItem="rgp-Hr-e52" secondAttribute="centerX" id="1L8-oc-oyL"/>
+                            <constraint firstItem="ezh-TU-fwI" firstAttribute="top" secondItem="zaO-Vj-NMw" secondAttribute="top" constant="20" id="4e7-3I-Cbd"/>
                             <constraint firstItem="rgS-K9-55p" firstAttribute="top" secondItem="rgp-Hr-e52" secondAttribute="bottom" constant="7.5" id="K4O-Ea-adM"/>
                             <constraint firstItem="rgp-Hr-e52" firstAttribute="centerY" secondItem="BCx-MO-qBb" secondAttribute="centerY" id="KfK-ep-t3C"/>
                             <constraint firstItem="ude-b6-8Pn" firstAttribute="leading" secondItem="zaO-Vj-NMw" secondAttribute="leading" id="RiC-hG-grg"/>

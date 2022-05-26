@@ -39,6 +39,7 @@ class SearchController: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             for loc in gpsList{
                 group.append(loc)
             }
+            group.sort{$0! > $1!}
             self.groupPicker.delegate = self
             self.groupPicker.dataSource = self
         }
